@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "5ea0a799-10d7-4eb7-b4ca-8042fee1e741",
+		"name": "stacc code challenge 2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET PEP hit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/pep?name=Knut Arild Hareide",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"pep"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Knut Arild Hareide"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET API Healthz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/healthz",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"healthz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET roles for company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/roller?orgNr=988971375",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"roller"
+					],
+					"query": [
+						{
+							"key": "orgNr",
+							"value": "988971375"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/enheter?orgNr=981078365",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"enheter"
+					],
+					"query": [
+						{
+							"key": "orgNr",
+							"value": "981078365"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PEP hit - ERROR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/api/pep?name=This person does not exist",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"api",
+						"pep"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "This person does not exist"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
