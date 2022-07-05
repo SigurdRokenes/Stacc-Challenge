@@ -5,10 +5,7 @@ import json
 
 PATH = "data/pep_small.csv"
 URL = "https://code-challenge.stacc.dev/api/pep?name=Knut Arild Hareide"
-#r = requests.get("https://code-challenge.stacc.dev/api/pep?name=Knut Arild Hareide")
-
 class Main:
-    _PATH = PATH
 
     def __init__(self):
         self.data = self.read_data(PATH)
@@ -39,13 +36,15 @@ class Main:
             'orgNr': '{}'.format(id),
         }
         response = requests.get('https://code-challenge.stacc.dev/api/roller', params=params)
-        return response
+
+        return response.json()[0]
 
 def main():
     reader = Main()
     reader.check_name(name = "Oleg SLIZHEVSKIY")
     test = reader.test(988971375)
-    print(test.json())
+    bronnoysund = dict(test.json()[0])
+    print(bronnoysund['fornavn'])
     #print(pd.read_json(test.json()))
 
 

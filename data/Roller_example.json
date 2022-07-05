@@ -1,0 +1,93 @@
+[
+    {
+        "type": {
+            "kode": "DAGL",
+            "beskrivelse": "Daglig leder/ adm.direktør",
+            "_links": {
+                "self": {
+                    "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/DAGL"
+                }
+            }
+        },
+        "sistEndret": "2010-01-25",
+        "roller": [
+            {
+                "type": {
+                    "kode": "DAGL",
+                    "beskrivelse": "Daglig leder/ adm.direktør",
+                    "_links": {
+                        "self": {
+                            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/DAGL"
+                        }
+                    }
+                },
+                "person": {
+                    "fodselsdato": "1969-08-11",
+                    "navn": {
+                        "fornavn": "Pål",
+                        "etternavn": "Christoffersen"
+                    },
+                    "erDoed": false
+                },
+                "fratraadt": false,
+                "rekkefolge": 0
+            }
+        ]
+    },
+    {
+        "type": {
+            "kode": "STYR",
+            "beskrivelse": "Styre",
+            "_links": {
+                "self": {
+                    "href": "https://data.brreg.no/enhetsregisteret/api/roller/rollegruppetyper/STYR"
+                }
+            }
+        },
+        "sistEndret": "2012-10-30",
+        "roller": [
+            {
+                "type": {
+                    "kode": "LEDE",
+                    "beskrivelse": "Styrets leder",
+                    "_links": {
+                        "self": {
+                            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/LEDE"
+                        }
+                    }
+                },
+                "person": {
+                    "fodselsdato": "1969-08-11",
+                    "navn": {
+                        "fornavn": "Pål",
+                        "etternavn": "Christoffersen"
+                    },
+                    "erDoed": false
+                },
+                "fratraadt": false,
+                "rekkefolge": 0
+            },
+            {
+                "type": {
+                    "kode": "VARA",
+                    "beskrivelse": "Varamedlem",
+                    "_links": {
+                        "self": {
+                            "href": "https://data.brreg.no/enhetsregisteret/api/roller/rolletyper/VARA"
+                        }
+                    }
+                },
+                "person": {
+                    "fodselsdato": "1967-07-27",
+                    "navn": {
+                        "fornavn": "Runar",
+                        "etternavn": "Solberg"
+                    },
+                    "erDoed": false
+                },
+                "fratraadt": false,
+                "rekkefolge": 1
+            }
+        ]
+    }
+]
