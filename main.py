@@ -45,5 +45,10 @@ def main():
 
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    try:
+        main()
+    except SystemExit as e:
+        print('Error!', e)
+        print('Press enter to exit')
+        input()
