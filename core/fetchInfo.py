@@ -11,6 +11,9 @@ class FetchLeadership:
 
     
     def fetch_info(self, query, id):
+        """
+        Get information from stacc API. (see core/query.py)
+        """
         try:
             response = query_company(query, id)
             return response
@@ -19,7 +22,10 @@ class FetchLeadership:
         
 
     def parse_company_leadership(self, json):
-        
+        """
+        input: (dict): json output from core/query.py
+        output: (dataframe) containing name and date_of_birth of leadership
+        """
         leadership = []
 
         for i in range(len(json)):

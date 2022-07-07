@@ -27,10 +27,6 @@ while True:
         break
 
 
-
-
-
-
 def main():
     company = FetchLeadership()
     check = PEP()
@@ -43,8 +39,7 @@ def main():
     print('Matches in PEP database:')
     print(matches[['name', 'birth_date', 'dataset', 'sanctions']])
 
-
-
+    
 if __name__ == '__main__':
     try:
         main()
@@ -52,3 +47,4 @@ if __name__ == '__main__':
         print('Error!', e)
         print('Press enter to exit')
         input()
+

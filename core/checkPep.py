@@ -10,7 +10,7 @@ class PEP:
         Reads csv file data and outputs as pandas dataframe
 
         Input: (str) path to datafile
-        output: (DataFrame)
+        output: (DataFrame) containing entire PEP dataset
         """
         return pd.read_csv(path, sep = ",", header='infer', low_memory=False)
 
@@ -18,7 +18,8 @@ class PEP:
     def check_name(self, names = list):
         """
         Checks for matching names in PEP registry
-        input (str): 
+        input (list): List of strings containing names
+        output(dataframe): Dataframe containing matching entries
         """
         #Searchable pattern used by Pandas to search for all names simultaneously
         pattern = '|'.join(names)
